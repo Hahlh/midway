@@ -43,7 +43,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   const { deletePage } = actions;
 
   // Delete dev 404 page for accounts to work in dev
-  if (page.internalComponentName === 'ComponentDev404Page') {
+  if (page.internalComponentName === 'Component/dev-404-page/') {
     deletePage(page);
   }
 };
